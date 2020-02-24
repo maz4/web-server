@@ -4,7 +4,7 @@ const searchInput = document.querySelector('input');
 const forecastContainer = document.querySelector('.forcast');
 
 const fetchData = (location) => {
-  const url = 'http://localhost:3000/weather?address=' + location;
+  const url = '/weather?address=' + location;
 
   fetch(url).then(response => {
     response.json().then(data => {
